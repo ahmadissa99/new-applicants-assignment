@@ -10,8 +10,80 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #000;
+    background-color: #3f3f3f;
     color: #fff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+input {
+    width: 260px;
+    height: 70px;
+    border: none;
+    outline: none;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: transparent;
+    text-align: end;
+    font-size: 50px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+button {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: none;
+    margin: 8px;
+}
+
+.equal,
+.percent,
+.division,
+.multiplication,
+.subtract,
+.addition,
+.ac,
+.del {
+    background-color: #00b4d8;
+    color: #fff;
+}
+
+@media (max-width: 575.98px) {
+    .container {
+        width: 100%;
+        height: 100vh;
+    }
+
+    button {
+        width: 73px;
+        height: 76px;
+    }
+
+    input {
+        width: 100%;
+    }
 }
 
 /* Add your css  */
